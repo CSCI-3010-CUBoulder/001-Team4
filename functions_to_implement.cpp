@@ -30,6 +30,7 @@ std::vector<bool> EvenMask(std::vector<int>);
 std::vector<bool> OddMask(std::vector<int>);
 
 // Sums all numbers in a vector and returns the resulting value
+
 int Sum(std::vector<int> nums)
 {
     int sum = 0;
