@@ -38,11 +38,20 @@ int Sum(std::vector<int> nums)
     {
         sum += nums[i];
     }
+    return sum;
 }
 
 // Multiplies all numbers in a vector together and returns the resulting value
-int Product(std::vector<int> nums);
-
+int Product(std::vector<int> nums)
+{
+    int prod = 0;
+    for(int i = 0;i<nums.size();i++)
+    {
+        prod = prod * nums[i];
+    }
+    return prod;
+}
+    
 // Adds an integer n to each element of a given vector
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
 
