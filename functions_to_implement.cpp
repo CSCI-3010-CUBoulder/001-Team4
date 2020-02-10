@@ -30,14 +30,7 @@ std::vector<bool> EvenMask(std::vector<int>);
 std::vector<bool> OddMask(std::vector<int>);
 
 // Sums all numbers in a vector and returns the resulting value
-int Sum(std::vector<int> nums)
-{
-    int sum = 0;
-    for(int i = 0;i<nums.size();i++)
-    {
-        sum += nums[i];
-    }
-}
+int Sum(std::vector<int> nums);
 
 // Multiplies all numbers in a vector together and returns the resulting value
 int Product(std::vector<int> nums);
@@ -46,7 +39,13 @@ int Product(std::vector<int> nums);
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
 
 // Multiples an integer n with each element of a given vector
-std::vector<int> VectorTimesN(std::vector<int> v, int n);
+std::vector<int> VectorTimesN(std::vector<int> v, int n)
+{
+    for(int i = 0;i<v.size();++i)
+    {
+        v[i] = v[i] * n;
+    }   
+}
 
 // takes in two integers and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
@@ -102,7 +101,10 @@ std::vector<double> Multiples(double n, double m);
 // returns -1 if the number is negative and 1 if positive
 double Sign(double num)
 {
-    cout<<"Hello World"<<endl;
+    if(num < 0)
+        return -1;
+    else
+        return 1;
 }
 
 
