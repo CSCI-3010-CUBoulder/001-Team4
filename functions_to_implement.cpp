@@ -56,7 +56,13 @@ int Product(std::vector<int> nums)
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
 
 // Multiples an integer n with each element of a given vector
-std::vector<int> VectorTimesN(std::vector<int> v, int n);
+std::vector<int> VectorTimesN(std::vector<int> v, int n)
+{
+    for(int i = 0;i<v.size();++i)
+    {
+        v[i] = v[i] * n;
+    }   
+}
 
 // takes in two integers and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
@@ -110,7 +116,13 @@ std::vector<double> VectorTimesN(std::vector<double> v, double n);
 std::vector<double> Multiples(double n, double m);
 
 // returns -1 if the number is negative and 1 if positive
-double Sign(double num);
+double Sign(double num)
+{
+    if(num < 0)
+        return -1;
+    else
+        return 1;
+}
 
 
 // adds n to each element of the vector
