@@ -1,4 +1,6 @@
 /* String functions section */
+#include<iostream>
+#include<vector>
 
 // Splits a single string on separator into a vector of strings
 std::vector<std::string> Split(std::string whole, std::string separator);
@@ -143,3 +145,9 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
+
+
+int main()
+{
+    
+}
